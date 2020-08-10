@@ -5,7 +5,7 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+//大小写敏感
 @FeignClient(value = "MICROSERVICECLOUD-DEPT")
 public interface FeignService {
     @RequestMapping(value = "/find/{id}",method = RequestMethod.GET)
