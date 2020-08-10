@@ -14,6 +14,9 @@
         <module>Eureka-7001</module>
         <module>Eureka-7003</module>
         <module>Demo7002Euraka</module>
+        <module>microservicecloud-provider-dept-8002</module>
+        <module>microservicecloud-provider-dept-8003</module>
+        <module>microservicecloud-consumer-dept-feign-80</module>
     </modules>
     <packaging>pom</packaging>
 

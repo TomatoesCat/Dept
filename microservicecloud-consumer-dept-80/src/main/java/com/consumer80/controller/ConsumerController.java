@@ -18,7 +18,8 @@ public class ConsumerController {
     Logger logger= LoggerFactory.getLogger(getClass());
     @Autowired
     RestTemplate restTemplate;
-    private static final String RES_URL_PREFIX="http://localhost:8001";
+    //private static final String RES_URL_PREFIX="http://localhost:8001";
+    private static final String RES_URL_PREFIX="http://microservicecloud-dept";
     @RequestMapping("/list")
     public List<Dept> listAll(){
         return restTemplate.getForObject(RES_URL_PREFIX+"/findAll",List.class);
