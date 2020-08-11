@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  */
 @SpringBootApplication
-@ComponentScan("com.consumer80.controller")
+@ComponentScan({"com.consumer80.controller","com.fallback"})
 @EnableEurekaClient
 @EnableFeignClients("com.dept.feign")
 public class Feign80

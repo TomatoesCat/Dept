@@ -1,2 +1,4 @@
-com\dept\feign\FeignService.class
 com\dept\pojo\Dept.class
+com\fallback\DeptFallbackFactory.class
+com\dept\feign\FeignService.class
+com\fallback\DeptFallbackFactory$1.class

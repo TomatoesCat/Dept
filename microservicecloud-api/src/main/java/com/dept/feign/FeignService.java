@@ -1,6 +1,7 @@
 package com.dept.feign;
 
 import com.dept.pojo.Dept;
+import com.fallback.DeptFallbackFactory;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,7 +10,7 @@ import java.util.List;
 /**
  * 大小写敏感
  */
-@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+@FeignClient(value = "MICROSERVICECLOUD-DEPT",fallbackFactory = DeptFallbackFactory.class)
 public interface FeignService {
     @RequestMapping(value = "/find/{id}",method = RequestMethod.GET)
     public Dept find(@PathVariable(value = "id") long id);

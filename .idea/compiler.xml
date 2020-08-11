@@ -8,16 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Eureka-7001" />
+        <module name="microservicecloud-provider-dept-hystrix-8001" />
         <module name="microservicecloud-consumer-dept-feign-80" />
         <module name="microservicecloud-provider-dept-8003" />
         <module name="microservicecloud-consumer-dept-80" />
         <module name="microservicecloud-provider-dept-8001" />
-        <module name="microservicecloud-api" />
+        <module name="Eureka-7002" />
         <module name="microservicecloud-provider-dept-8002" />
         <module name="Demo7002Euraka" />
         <module name="DEureka7002Demo" />
         <module name="Eureka-7003" />
-        <module name="Eureka-7002" />
+        <module name="microservicecloud-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
